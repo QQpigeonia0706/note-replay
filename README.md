@@ -1,5 +1,59 @@
 # Note Replay
 
+> Record and replay your note editing process.
+## Core Features
+
+- **Edit Snapshots**: Automatically records a text snapshot at most every 600ms while editing notes.
+- **Replay Panel**: Press `Ctrl + Alt + G` (or `Cmd + Option + G`) to open/close the replay panel for the current note.
+- **Scrubbing & Playback Speed**: Drag the progress bar to review any past edit, with playback speeds ranging from `0.5x` to `16x`.
+- **Export & Delete**: In the top right corner of the replay panel, you can export all history of the current note as a JSON file or clear the snapshots for just this note.
+- **Excluded Folders**: You can specify certain folders in the settings (e.g., "Private Diary", "Temp Clipboard") where no snapshots will be recorded.
+- **Smart Storage Optimization**:
+  - **Expiration**: Snapshots are retained for only 7 days. Expired data is automatically cleaned up on startup and every hour.
+  - **Equidistant Thinning**: A maximum of 1000 records are kept per note. When exceeded, old snapshots are deleted **at regular intervals** across the entire time range (keeping the first and last ones), ensuring early records are not completely lost.
+
+## Installation
+
+### Method 1: Obsidian Community Plugins
+1. Open Obsidian Settings -> Community Plugins -> Browse.
+2. Search for `Note Replay` and install/enable it.
+
+### Method 2: Manual Installation
+1. Download the latest `main.js`, `manifest.json`, and `styles.css` from the [Releases](https://github.com/QQpigeonia0706/note-replay/releases/tag/1.0.3) page of this repository.
+2. In your Vault folder, locate the `.obsidian/plugins/` directory (create it manually if it doesn't exist).
+3. Create a new folder named `note-replay` and place the three downloaded files inside it.
+4. Open Obsidian, turn off Safe Mode in "Community Plugins", refresh, and enable `Note Replay`.
+
+## Usage
+
+| Action | Description |
+| --- | --- |
+| Writing normally | The plugin records automatically in the background; no intervention needed |
+| `Ctrl + Alt + G` | Open/close the replay panel for the current note |
+| `Space` | Play / Pause replay |
+| `←` / `→` | Step backward / forward |
+| `⏮` / `⏭` Buttons | Jump to start / Jump to latest state |
+| Progress bar | Drag to any historical moment |
+| Top right `⬇ Export` | Export the edit history of the current note as JSON |
+| Top right `🗑 Delete All` | Clear all snapshots of the current note (does not affect note content) |
+
+## Settings & Data
+
+In **Settings -> Note Replay**, you can view current storage usage, snapshot counts for each note, and perform manual cleanups.
+
+**Excluded Folders**:
+Enter folder names in the settings (one per line). No snapshots will be recorded for notes in these folders. If snapshots were previously recorded, you can click "Clean Up Now" to delete them all.
+
+## Developer Notes
+
+If you clone the source code of this repository, you need to run `npm run build` to generate `main.js`. Note that the compiled `main.js` and `styles.css` are not in this repository; they are uploaded as binary attachments to [Releases](https://github.com/QQpigeonia0706/note-replay/releases/tag/1.0.3).
+
+## License
+
+This project is open-sourced under the [MIT License](LICENSE).
+
+# Note Replay
+
 > 记录笔记编辑回放。
 ## 核心功能
 
