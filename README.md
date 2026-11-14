@@ -19,7 +19,7 @@
 2. 搜索 `Note Replay` 并安装启用。
 
 ### 方法二：手动安装
-1. 在本仓库的 [Releases][[链接到你的Releases页面](https://github.com/QQpigeonia0706/note-replay/releases/tag/1.0.3))] 页面下载最新的 `main.js`、`manifest.json` 和 `styles.css`。
+1. 在本仓库的 [Releases](https://github.com/QQpigeonia0706/note-replay/releases/tag/1.0.3))页面下载最新的 `main.js`、`manifest.json` 和 `styles.css`。
 2. 在你的 Vault 文件夹中，找到 `.obsidian/plugins/` 目录（如果没有则手动创建）。
 3. 新建一个名为 `note-replay` 的文件夹，将下载的三个文件放入其中。
 4. 打开 Obsidian，在“第三方插件”中关闭安全模式，刷新并开启 `Note Replay`。
