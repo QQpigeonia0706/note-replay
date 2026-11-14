@@ -3,7 +3,7 @@
   "name": "Note Replay",
   "version": "1.0.3",
   "minAppVersion": "0.15.0",
-  "description": "一个像画世界pro一样可以查看写作回放的插件。",
+  "description": "一个像画世界pro一样可以查看写作回放的插件。"。
   "author": "pigeonia",
   "isDesktopOnly": false
 }
