@@ -1,7 +1,7 @@
 {
   "id": "note-replay",
   "name": "Note Replay",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "minAppVersion": "0.15.0",
   "description": "一个像画世界pro一样可以查看写作回放的插件。"。
   "author": "pigeonia",
