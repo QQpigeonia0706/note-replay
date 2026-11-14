@@ -1,9 +1,9 @@
 {
   "id": "note-replay",
   "name": "Note Replay",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "minAppVersion": "0.15.0",
   "description": "记录并回放笔记的编辑修改全过程。",
-  "author": "pigeonia",
+  "author": "QQpigeonia0706",
   "isDesktopOnly": false
 }
